@@ -1,0 +1,110 @@
+[
+  {
+    "_id": "1",
+    "name": "Chef Alice",
+    "title": "Healthy Breakfast Bowl",
+    "image": "https://i.ibb.co/z70fwL0/Hash-Brown-5-e1941c86066346e8a592e4c589d4933d.jpg",
+    "rating": 4.5,
+    "price": 8.99,
+    "category": "breakfast"
+  },
+  {
+    "_id": "2",
+    "name": "Chef Bob",
+    "title": "Avocado Toast",
+    "image": "https://i.ibb.co/WyXqqGd/f4604e05f6a9eaca99afddd69e849005-c02485d4-0841-4de6-b152-69deb38693f2.jpg",
+    "rating": 4.7,
+    "price": 9.99,
+    "category": "breakfast"
+  },
+  {
+    "_id": "3",
+    "name": "Chef Charlie",
+    "title": "Classic Pancakes",
+    "image": "https://i.ibb.co/2ZtKvLP/images.jpg",
+    "rating": 4.2,
+    "price": 7.99,
+    "category": "breakfast"
+  },
+  {
+    "_id": "4",
+    "name": "Chef Alice",
+    "title": "Grilled Chicken Salad",
+    "image": "https://i.ibb.co/cCfxSzv/Sumac-turkey-stuffed-pittas-73482d5.jpg",
+    "rating": 4.2,
+    "price": 12.99,
+    "category": "lunch"
+  },
+  {
+    "_id": "5",
+    "name": "Chef Bob",
+    "title": "Quinoa Salad",
+    "image": "https://i.ibb.co/c32QPbg/diy-taco-lunch-box-54f8791776b64900b285fbfc22a4f0bc.jpg",
+    "rating": 4.4,
+    "price": 11.99,
+    "category": "lunch"
+  },
+  {
+    "_id": "6",
+    "name": "Chef Charlie",
+    "title": "Caprese Sandwich",
+    "image": "https://i.ibb.co/Rzkqn4Q/download-1.jpg",
+    "rating": 4.6,
+    "price": 10.99,
+    "category": "lunch"
+  },
+  {
+    "_id": "7",
+    "name": "Chef Alice",
+    "title": "Spaghetti Bolognese",
+    "image": "https://i.ibb.co/9G4YGnZ/46173052.webp",
+    "rating": 4.8,
+    "price": 14.99,
+    "category": "dinner"
+  },
+  {
+    "_id": "8",
+    "name": "Chef Bob",
+    "title": "Salmon Teriyaki",
+    "image": "https://i.ibb.co/7V75cp5/10867983783-854a7fec8f-o.jpg",
+    "rating": 4.6,
+    "price": 16.99,
+    "category": "dinner"
+  },
+  {
+    "_id": "9",
+    "name": "Chef Charlie",
+    "title": "Vegetarian Pizza",
+    "image": "https://i.ibb.co/jDRSv81/images-2.jpg",
+    "rating": 4.3,
+    "price": 13.99,
+    "category": "dinner"
+  },
+  {
+    "_id": "10",
+    "name": "Chef Alice",
+    "title": "Fruit Parfait",
+    "image": "https://i.ibb.co/TP0bZF3/download.jpg",
+    "rating": 4.4,
+    "price": 6.99,
+    "category": "breakfast"
+  },
+  {
+    "_id": "11",
+    "name": "Chef Bob",
+    "title": "Caesar Salad",
+    "image": "https://i.ibb.co/RS9rXcZ/easy-meals-to-cook-in-a-hostel.jpg",
+    "rating": 4.1,
+    "price": 9.99,
+    "category": "lunch"
+  },
+  {
+    "_id": "12",
+    "name": "Chef Charlie",
+    "title": "Mushroom Risotto",
+    "image": "https://i.ibb.co/NL65T1q/jcliv9dg-shahi-paneer-625x300-15-March-22.jpg",
+    "rating": 4.7,
+    "price": 15.99,
+    "category": "dinner"
+  }
+]
