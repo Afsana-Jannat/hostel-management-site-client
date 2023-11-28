@@ -19,11 +19,13 @@ import UpdateMeals from "../pages/DashBoard/UpdateMeals/UpdateMeals";
 import Payment from "../pages/DashBoard/Payment/Payment";
 import Details from "../Details/Details";
 import Allreviews from "../pages/DashBoard/AllReviews/Allreviews";
+import ErrorPage from "../pages/ErrorPage/ErrorPage";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <Main></Main>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: '/',
