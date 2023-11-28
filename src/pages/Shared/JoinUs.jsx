@@ -3,7 +3,9 @@
 const JoinUs = () => {
     return (
         <div>
-            <h3>joinnn</h3>
+            <div>
+            <h3>join our group</h3>
+            </div>
         </div>
     );
 };

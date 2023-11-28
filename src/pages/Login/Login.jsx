@@ -3,6 +3,7 @@ import { loadCaptchaEnginge, LoadCanvasTemplate, validateCaptcha } from 'react-s
 import { AuthContext } from '../../providers/AuthProvider';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
+import SocialLogin from './SocialLogin';
 
 
 
@@ -92,11 +93,12 @@ const Login = () => {
            placeholder="type the captcha above" className="input input-bordered" required />
         </div>
         <div className="form-control mt-6">
-            <input disabled={disabled} className="btn btn-primary" type="submit" value="Login" />
+            <input disabled={disabled} className="btn text-white bg-cyan-700" type="submit" value="Login" />
         </div>
       </form>
-      <p><small>New Here? <Link to="/signup">
+      <p className="text-center mb-4"><small>New Here? <Link className="text-xl ml-2 font-semibold text-pink-500" to="/signup">
         Create an account</Link></small></p>
+        <SocialLogin></SocialLogin>
     </div>
   </div>
 </div>

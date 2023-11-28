@@ -2,9 +2,11 @@ import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../../providers/AuthProvider";
 import { FaCartPlus } from "react-icons/fa";
+import useCart from "../../../hooks/useCart";
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
+  const [cart] = useCart();
 
   const handleLogOut = () => {
     logOut()
@@ -15,10 +17,10 @@ const Navbar = () => {
     <li><Link to="/">Home</Link></li>
     <li><Link to="/meals">Meals</Link></li>
     <li><Link to="/joinus">Join Us</Link></li>
-    <li><Link to="/">
+    <li><Link to="/dashboard/cart">
       <button className="btn glass text-red-600">
-      <FaCartPlus className="mr-2" />
-        <div className="badge text-white bg-red-400">+99</div>
+      <FaCartPlus /> addmeals
+        <div className="badge text-white bg-red-400">+{cart.length}</div>
       </button>
     </Link></li>
     {
@@ -44,7 +46,7 @@ const Navbar = () => {
           <div>
             <img className="w-18 h-14" src="https://i.ibb.co/jVP31LS/HMS-LOGOz1-1.png" alt="" />
           </div>
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          <a className="btn btn-ghost text-xl">Hostel Managment</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">

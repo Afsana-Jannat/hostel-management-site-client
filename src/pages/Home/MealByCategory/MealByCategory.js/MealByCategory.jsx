@@ -7,6 +7,7 @@ import CartTab from '../CartTab/CartTab';
 const MealByCategory = () => {
     const [tabIndex, setTabIndex] = useState(0);
     const [meals] = useMeals();
+    console.log(meals);
     const breakfast = meals.filter(item => item.category === 'breakfast')
     const lunch = meals.filter(item => item.category === 'lunch')
     const dinner = meals.filter(item => item.category === 'dinner')
