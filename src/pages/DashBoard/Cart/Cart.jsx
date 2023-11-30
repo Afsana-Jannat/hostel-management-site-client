@@ -7,7 +7,12 @@ import { Link } from "react-router-dom";
 
 const Cart = () => {
     const [cart, refetch] = useCart();
-    const totalPrice = cart.reduce((total, item) => total + item.price, 0)
+    console.log(cart);
+    const totalPrice = cart?.reduce((total, item) => {
+        let currentPrice = item?.price || 0
+        return total + currentPrice
+    }, 0)
+
 
     const axiosSecure = useAxiosSecure();
 
@@ -46,12 +51,12 @@ const Cart = () => {
                 <div className="flex mb-8 justify-evenly">
                     <h2 className="text-2xl">Items: {cart.length}</h2>
                     <h2 className="text-2xl">Total price: $ {totalPrice}</h2>
-                    { cart.length ? <Link to="/dashboard/payment">
-                    <button className="btn
+                    {cart.length ? <Link to="/dashboard/payment">
+                        <button className="btn
                      text-white bg-red-300">Pay</button>
                     </Link> :
-                    <button disabled className="btn
-                    text-white bg-red-300">Pay</button> } 
+                        <button disabled className="btn
+                    text-white bg-red-300">Pay</button>}
                 </div>
             </div>
             <div className="overflow-x-auto">

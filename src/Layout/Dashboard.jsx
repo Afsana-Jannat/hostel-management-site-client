@@ -56,44 +56,23 @@ const Dashboard = () => {
                                 <li>
                                     <NavLink to="/dashboard/adminHome">
                                         <FaHome></FaHome>
-                                        Admin Home</NavLink>
+                                        User profile</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to="/dashboard/manageItems">
+                                    <NavLink to="/dashboard/paymentHistory">
                                         <FaList></FaList>
-                                        Manage Items </NavLink>
+                                        Real Payment History </NavLink>
                                 </li>
-                                <li>
-                                    <NavLink to="/dashboard/bookings">
-                                        <FaBook></FaBook>
-                                        Manage Bookings</NavLink>
-                                </li>
-                                {/* <li>
-                    <NavLink to="/dashboard/users">
-                        <FaUser></FaUser>
-                        All Users</NavLink>
-                </li> */}
 
-                                <li>
-                                    <NavLink to="/dashboard/useHome">
-                                        <FaHome></FaHome>
-                                        User Home</NavLink>
-                                </li>
-                                {/* <li>
-                    <NavLink to="/dashboard/reservation">
-                        <FaCalendar></FaCalendar>
-                        Reservation</NavLink>
-                </li> */}
                                 <li>
                                     <NavLink to="/dashboard/cart">
                                         <FaShoppingCart></FaShoppingCart>
                                         My Cart ({cart.length}) </NavLink>
                                 </li>
-
                                 <li>
-                                    <NavLink to="/dashboard/review">
-                                        <FaAd></FaAd>
-                                        Review</NavLink>
+                                    <NavLink to="/dashboard/history">
+                                        <FaList></FaList>
+                                        Not History </NavLink>
                                 </li>
 
                             </>

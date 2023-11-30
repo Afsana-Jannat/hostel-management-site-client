@@ -7,7 +7,7 @@ const useMeals = () => {
     // const [meals, setMeals] = useState([]);
     // const [loading, setLoading] = useState(true);
     // useEffect( () =>{
-    //     fetch('http://localhost:5000/meals')
+    //     fetch('https://hostel-management-ruby.vercel.app/meals')
     //     .then(res => res.json())
     //     .then(data => {
     //         setMeals(data);
@@ -15,9 +15,9 @@ const useMeals = () => {
     //     });
     // }, [])
 
-    const {data: meals = [], isPending: loading, refetch} = useQuery({
+    const { data: meals = [], isPending: loading, refetch } = useQuery({
         queryKey: ['meals'],
-        queryFn: async() =>{
+        queryFn: async () => {
             const res = await axiosPublic.get('/meals')
             return res.data;
         }

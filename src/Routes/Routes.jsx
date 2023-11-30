@@ -20,6 +20,7 @@ import Payment from "../pages/DashBoard/Payment/Payment";
 import Details from "../Details/Details";
 import Allreviews from "../pages/DashBoard/AllReviews/Allreviews";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
+import PaymentHistory from "../pages/DashBoard/PaymentHistory/PaymentHistory";
 
 export const router = createBrowserRouter([
   {
@@ -50,7 +51,7 @@ export const router = createBrowserRouter([
       {
         path: 'details/:id',
         element: <Details></Details>,
-        loader: ({ params }) => fetch(`http://localhost:5000/meals/${params.id}`)
+        loader: ({ params }) => fetch(`https://hostel-management-ruby.vercel.app/meals/${params.id}`)
       }
     ]
   },
@@ -69,6 +70,10 @@ export const router = createBrowserRouter([
       {
         path: 'payment',
         element: <Payment></Payment>
+      },
+      {
+        path: 'paymentHistory',
+        element: <PaymentHistory></PaymentHistory>
       },
       // admin routes
       {
@@ -90,7 +95,7 @@ export const router = createBrowserRouter([
       {
         path: 'updatemeals/:id',
         element: <AdminRoute><UpdateMeals></UpdateMeals></AdminRoute>,
-        loader: ({ params }) => fetch(`http://localhost:5000/meals/${params.id}`)
+        loader: ({ params }) => fetch(`https://hostel-management-ruby.vercel.app/meals/${params.id}`)
       }
     ]
   }

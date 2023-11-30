@@ -24,7 +24,7 @@ const Details = () => {
             return res.data;
         }
     })
-    const { _id, title, image, name, likes, reviews } = details;
+    const { _id, title, image, name, likes, reviews, price } = details;
 
 
 
@@ -36,7 +36,8 @@ const Details = () => {
                 mealId: _id,
                 email: user.email,
                 name,
-                image
+                image,
+                price
             }
             axiosSecure.post('/carts', cartItem)
                 .then(res => {
@@ -92,6 +93,7 @@ const Details = () => {
                     <img src={image} className="max-w-sm md:w-[540px] rounded-lg shadow-2xl" />
                     <div>
                         <h1 className="text-3xl font-bold">{title}!</h1>
+                        <p>{price}</p>
                         <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
                         <h2 className="text-xl">
                             ⭐⭐⭐⭐
