@@ -17,9 +17,10 @@ const Navbar = () => {
     <li><Link to="/">Home</Link></li>
     <li><Link to="/meals">Meals</Link></li>
     <li><Link to="/joinus">Join Us</Link></li>
+    <li><Link to="/upcoming">Upcoming Meals</Link></li>
     <li><Link to="/dashboard/cart">
       <button className="btn glass text-red-600">
-      <FaCartPlus /> addmeals
+        <FaCartPlus /> addmeals
         <div className="badge text-white bg-red-400">+{cart.length}</div>
       </button>
     </Link></li>

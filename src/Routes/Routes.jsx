@@ -21,6 +21,7 @@ import Details from "../Details/Details";
 import Allreviews from "../pages/DashBoard/AllReviews/Allreviews";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import PaymentHistory from "../pages/DashBoard/PaymentHistory/PaymentHistory";
+import Upcoming from "../pages/Upcoming/Upcoming";
 
 export const router = createBrowserRouter([
   {
@@ -47,6 +48,10 @@ export const router = createBrowserRouter([
       {
         path: 'joinus',
         element: <PrivateRoute><JoinUs></JoinUs></PrivateRoute>
+      },
+      {
+        path: 'upcoming',
+        element: <Upcoming></Upcoming>
       },
       {
         path: 'details/:id',

@@ -15,13 +15,13 @@ const MealByCategory = () => {
     return (
         <div className="p-8">
             <Tabs defaultIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
-                <TabList>
+                <TabList className="text-cyan-600 font-bold">
                     <Tab>BreakFast</Tab>
                     <Tab>Lunch</Tab>
                     <Tab>Dinner</Tab>
                 </TabList>
                 <TabPanel>
-                   <CartTab items={breakfast}></CartTab>
+                    <CartTab items={breakfast}></CartTab>
                 </TabPanel>
                 <TabPanel>
                     <CartTab items={lunch}></CartTab>
